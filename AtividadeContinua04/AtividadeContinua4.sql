@@ -1,15 +1,6 @@
-/*
 
-2100542 - Eduardo Julio Monteiro
-2100203 - Eduardo Machado da Costa Oliveira
-2101064 - Kassio Almeida Gomes Soriano
-2100210 - Nikolas Barbosa Miranda
-2100545 - Victor de Paula Campos
-
-*/
-
--- 1. Crie uma função X que receba um parâmetro referente ao número do veículo e outro referente ao Ano de Venda. 
--- A função deve retornar o número de vendas referentes ao veículo no dado ano.
+-- 1. Crie uma funÃ§Ã£o X que receba um parÃ¢metro referente ao nÃºmero do veÃ­culo e outro referente ao Ano de Venda. 
+-- A funÃ§Ã£o deve retornar o nÃºmero de vendas referentes ao veÃ­culo no dado ano.
 
 select * from veiculo
 select * from vendasAnuais
@@ -36,8 +27,8 @@ select [2100545].funcX(47, 2013) as compras
 
 
 
--- 2. Crie uma função Y que receba um parâmetro referente ao número do cliente e retorne
--- todas as compras feitas por este cliente, trazendo as informações abaixo:
+-- 2. Crie uma funÃ§Ã£o Y que receba um parÃ¢metro referente ao nÃºmero do cliente e retorne
+-- todas as compras feitas por este cliente, trazendo as informaÃ§Ãµes abaixo:
 
 create or alter function [2100545].funcY(@idCliente tinyint)
 returns table
@@ -68,10 +59,10 @@ return
 
 select * from [2100545].funcY(2)
 
--- 3. Crie uma função Z que receba um parâmetro referente ao número do cliente. 
--- A função deve retornar todo o conteúdo da função Y e mais 3 colunas com o nome TotalVendasVeiculo2013, TotalVendasVeiculo2014, TotalVendasVeiculo2015. 
+-- 3. Crie uma funÃ§Ã£o Z que receba um parÃ¢metro referente ao nÃºmero do cliente. 
+-- A funÃ§Ã£o deve retornar todo o conteÃºdo da funÃ§Ã£o Y e mais 3 colunas com o nome TotalVendasVeiculo2013, TotalVendasVeiculo2014, TotalVendasVeiculo2015. 
 -- Estas colunas devem ser preenchidas com as quantidades de compras que o determinado cliente fez nos respectivos anos. 
--- Alguns requisitos devem ser seguidos na função Z:
+-- Alguns requisitos devem ser seguidos na funÃ§Ã£o Z:
 
 
 create or alter function [2100545].funcZ(@idCliente int)
